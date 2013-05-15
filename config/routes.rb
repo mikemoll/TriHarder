@@ -1,6 +1,8 @@
 TriHarder::Application.routes.draw do
-  resources :workout_activities
+  devise_for :users
 
+  resources :workout_activities
+root to: 'workout_activities#index'
 
   resources :workouts
 

@@ -1,0 +1,24 @@
+// Place all the styles related to the Workout_Activities controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.workout_activity {
+	border-bottom: solid 1px #CCC;
+	padding: 5px 0;
+}
+
+.workout_activity p {
+	margin: 4px 0;
+}
+
+.workout_activity.hover {
+	background: #FAFAFA;
+}
+
+.workout_activity .admin {
+	display: none;
+}
+
+.workout_activity.hover .admin {
+	display: inline;
+}

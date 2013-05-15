@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @workout_activity.Type %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @workout_activity.Description %>
+</p>
+
+
+<%= link_to 'Edit', edit_workout_activity_path(@workout_activity) %> |
+<%= link_to 'Back', workout_activities_path %>

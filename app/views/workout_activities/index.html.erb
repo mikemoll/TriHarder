@@ -1,0 +1,19 @@
+<div class="page-header">
+  <h1>Workout Feed</h1>
+</div>
+
+<%= link_to "Post New Workout", new_workout_activity_path, class: "btn btn-large btn-success" %>
+
+<% @workout_activities.each do |workout_activity| %>
+<div class="Workouts">
+  <strong><%= workout_activity.Type %></strong>
+  <p><%= workout_activity.Description %></p>
+  <div class="meta">
+    <%= link_to time_ago_in_words(workout_activity.created_at) + " ago", workout_activity %> 
+    <span class="admin">
+      | <%= link_to "Edit", edit_workout_activity_path(workout_activity) %> | 
+      <%= link_to "Delete", workout_activity, method: :delete, data: { confirm: "Are you sure your want to delete this workout?"} %>
+    </span>
+  </div>
+</div>
+<% end %>

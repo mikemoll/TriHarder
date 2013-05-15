@@ -1,4 +1,7 @@
 TriHarder::Application.routes.draw do
+  resources :workout_activities
+
+
   resources :workouts
 
 

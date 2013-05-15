@@ -7,8 +7,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+  	<div class="container">
+	<ul class="nav"> 
+    	 
+    			<ul class="nav">
+    				<li><a class="brand" href="#">Trihader</a></li>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="<% workouts_path %>">Workouts </a></li>
+      <li><a href="<% workout_activities_path %>">Calendar</a></li>
+        <li><a href="#">Tribes</a></li>
+        <li><a href="#">Store</a></li>
+    </ul>
 
+    	
+
+  </div>
+</div>	
+  </div>
+<div class="container">
 <%= yield %>
-
+</div>
 </body>
 </html>
